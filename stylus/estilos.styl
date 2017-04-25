@@ -1,4 +1,4 @@
-@import "nib"
+//@import "nib"
 @import "normalize.styl"
 @import "fonts.styl"
 
@@ -14,6 +14,8 @@ gris_oscuro = #333333
 gris_claro = #818181
 rojo = #BD255B
 gris_mas_claro = #F0F0F0
+azul = #3D5A98
+celeste = #5FA9DD
 
 body
   font-family 'Varela Round', sans-serif
@@ -34,7 +36,42 @@ ul
   margin-top -10px
   position absolute
   top 50%
-//oocss conteiners
+.buttons-login
+  padding 0.5em 0
+.button-login
+  color gris_claro
+  font-size 3em
+//index
+.social-login
+  position relative
+.logo-login
+  position absolute
+  top 4.2em
+  left 1.5em
+  right 1.5em
+.login-tittle
+  position absolute
+  top 6em
+  left 0
+  bottom 0
+.tittle-login
+  text-align center
+  color white
+  font-size 1.5em
+//oocss containers
+.login
+  &.small
+    width 20em
+    margin 0 auto
+// .login-bg
+//   img
+//     object-fit cover
+//     width 100%
+//     height 400px
+.azul
+  color azul
+.celeste
+  color celeste
 .container
   font-size 0
   padding 1.4rem
@@ -180,6 +217,8 @@ ul
     font-size .8em
 .isotipo
   width 122px
+.isotipo-login
+  width 320px
 .logo
   padding 1.3em 0
   overflow hidden
