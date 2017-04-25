@@ -30,6 +30,10 @@ ul
   margin 0
   padding 0
 //buttons
+.azul
+  background azul
+.celeste
+  background celeste
 .button-menu
   color gris_oscuro
   left .5em
@@ -37,10 +41,26 @@ ul
   position absolute
   top 50%
 .buttons-login
-  padding 0.5em 0
-.button-login
-  color gris_claro
-  font-size 3em
+  margin 0.5em 0
+  //padding 0.8em 0
+  border 1px solid transparent
+  border-radius 0.3em
+  width 17em
+  height 3.25em
+  position relative
+  cursor pointer
+  .button-text
+    color white
+    font-size 1em
+    position absolute
+    left 3em
+    padding 1em 1em
+  .button-login
+    color white
+    font-size 1.5em
+    top 0.3em
+    padding 0.2em 0.5em
+    position absolute
 //index
 .social-login
   position relative
@@ -58,6 +78,22 @@ ul
   text-align center
   color white
   font-size 1.5em
+.border-right-gris-oscuro
+  border-right 1px solid gris_oscuro
+.border-right-gris-claro
+  border-right 1px solid gris_claro
+.login-link
+  display inline-block
+  margin 0.5em 0
+  text-align center
+  width 9.8em
+  padding 0.5em 0
+  a
+    color gris_claro
+    text-decoration underline
+    font-size 0.9em
+  &:nth-child(even)
+    border-right 1px solid gris_claro
 //oocss containers
 .login
   &.small
@@ -218,7 +254,8 @@ ul
 .isotipo
   width 122px
 .isotipo-login
-  width 320px
+  width 244px
+  margin 0 auto
 .logo
   padding 1.3em 0
   overflow hidden
