@@ -14,6 +14,7 @@ gris_oscuro = #333333
 gris_claro = #818181
 rojo = #BD255B
 gris_mas_claro = #F0F0F0
+gris_mas_claro2 = #D0D2D3
 azul = #3D5A98
 celeste = #5FA9DD
 
@@ -94,7 +95,21 @@ ul
     font-size 0.9em
   &:nth-child(even)
     border-right 1px solid gris_claro
+.info-box
+  margin-top 1em
+.info-text
+  width 17em
+  margin 1em auto
+  padding-bottom 0.5em
+  p
+    margin-bottom 0.5em
+.info-title
+  font-size 1.2em
+
 //oocss containers
+.footer
+  background gris_oscuro
+  color white
 .login
   &.small
     width 20em
@@ -104,10 +119,10 @@ ul
 //     object-fit cover
 //     width 100%
 //     height 400px
-.azul
-  color azul
-.celeste
-  color celeste
+.dark-gray
+  color gris_oscuro
+.gray
+  color gris_claro
 .container
   font-size 0
   padding 1.4rem
@@ -126,8 +141,12 @@ ul
   left 0
   right 0
   background rgba(black,.3)
+.border-top
+  border-top 1px solid gris_claro
 .border-bottom
   border-bottom 1px solid gris_claro
+.border-bottom-light
+  border-bottom 1px solid gris_mas_claro2
 .name
   color gris_oscuro
 .menu
